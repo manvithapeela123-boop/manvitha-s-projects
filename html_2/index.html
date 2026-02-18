@@ -1,42 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIPO</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
-<header>
-    <h1>KIPO</h1>
-</header>
-    <main>More Games Coming Soon...</main>
-    <p>Welcome to KIPO! Come here to play games, learn, and have fun!</p>
-    <nav>
-      <ul>
-        <div class="game-container">
-           <div class="game-card">
-                 <a href="subwaysurfers.html">
-                 <img src="subwaysurfers.jpeg" width="200" height="200" alt="Play Subway Surfers">
-                 <p id="gamename">Subway Surfers</p>
-                 </a>
-           </div>
-           <div class="game-card">
-            <a href="templerun.html">
-           <img src="templerun.png.jpeg" width="200" height="200" alt="Play Temple Run">
-           <p id="gamename">Temple Run</p>
-           </a>
-          </div>
 
-         <div class="game-card">
-          <a href="geometrydash.html">
-          <img src="geometry-dash.png.jpg" width="200" height="200" alt="Play Geometry Dash">
-          <p id="gamename">Geometry Dash</p>
-          </a>
-         </div>
-        </div>
-      </ul>
-    </nav>
-    <footer>Contact us for feedback at officialemail@gmail.com</footer>
+<header>
+    <h1 class="head1">This is my website</h1>
+    <h2 class="head1">lets play some gamessssss</h2>
+    <p>Inspired by <cite>classic arcade games</cite>.</p> <!-- cite requirement -->
+</header>
+
+<main> 
+    <h1>Games here:</h1>
+
+    <!-- Section (Requirement 1) -->
+    <section id="games" class="games-section">
+        <p>These games are really useful.</p>
+        <p>Click the <code>Play</code> button to begin.</p> <!-- code requirement -->
+    </section>
+
+    <!-- TABLE Requirement -->
+    <section>
+        <h2>Game Ratings</h2>
+        <table border="1">
+            <tr>
+                <td rowspan="2">Game</td>
+                <td colspan="2">Rating</td>
+            </tr>
+            <tr>
+                <td>Fun</td>
+                <td>Difficulty</td>
+            </tr>
+            <tr>
+                <td>Game 1</td>
+                <td>9/10</td>
+                <td>7/10</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- FORM Requirement -->
+    <section>
+        <h2>Feedback Form</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="username" required>
+
+            <br><br>
+
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" cols="40"></textarea>
+
+            <br><br>
+
+            <label>
+                <input type="checkbox" name="subscribe">
+                Subscribe to updates
+            </label>
+
+            <br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- MULTIMEDIA Requirement -->
+    <section>
+        <h2>Game Trailer</h2>
+        <video width="320" height="240" controls>
+            <source src="trailer.mp4" type="video/mp4">
+        </video>
+
+        <h2>Background Music</h2>
+        <audio controls>
+            <source src="music.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+
+</main>
+
+<p id="para1">This is a paragraph.</p>
+<p id="para2">This is another paragraph</p>
+
+<nav>
+    <button class="class" id="homeButton"><a href="home.html">home</a></button>
+
+    <ul>
+        <!-- Relative link -->
+        <li><a href="home.html">HOME</a></li>
+
+        <!-- Relative link -->
+        <li><a href="Game_1.html">Game 1</a></li>
+
+        <!-- Opens in new tab -->
+        <li><a href="Game_2.html" target="_blank">Game 2</a></li>
+
+        <!-- Absolute link -->
+        <li><a href="https://www.crazygames.com" target="_blank" rel="noopener">External Games</a></li>
+
+        <li><a href="#feedback">FEEDBACK</a></li>
+    </ul>
+</nav>
+
+<footer>
+    Contact us for feedback at officialemail@gmail.com
+</footer>
+
 </body>
 </html>
